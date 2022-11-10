@@ -78,4 +78,49 @@ body{
     color: #3D2187;
     text-align: center;
     font-size: 10px;
-}
+} _
+ .wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    padding: 30px;
+  }
+  
+  .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #7318c7;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .wrapper .form{
+    width: 100%;
+  }
+  
+  .wrapper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper .form .input_field label{
+     width: 200px;
+     color: #757575;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .wrapper .form .input_field .input,
+  .wrapper .form .input_field .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }

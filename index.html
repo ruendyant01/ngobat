@@ -10,7 +10,9 @@
   <body> 
     <div class="header">
       <div class="headerlist">
-        <button type="button" class="btn" >Tambah Barang</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1">
+          Tambah Barang 
+        </button>
       </div>
       <div class="headerlogo">
         <p><b>NG</b>OBAT</p>
@@ -100,6 +102,48 @@
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Tambah Barang</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+        
+          <div class="modal-body">
+             <div class="wrapper">
+               <div class="form">
+           <div class="input_field">
+              <label>Nama</label>
+              <input type="text" class="input">
+           </div>  
+            <div class="input_field">
+              <label>Link Gambar</label>
+              <input type="text" class="input">
+           </div>  
+           <div class="input_field">
+              <label>Stock</label>
+              <input type="text" class="input">
+           </div>  
+          <div class="input_field">
+              <label>Harga</label>
+              <input type="text" class="input">
+             </div> 
+             <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="useEdit()" data-bs-dismiss="modal">Save</button>
+            </div>
+           </div> 
+          </div>
+       </div>
+     </div>
+          </div>
+        </div>
+      </div>
+
       <div class="footer">
         <h5><b>NG</b>OBAT</h5>
         <p>Hackaton8 by team 3</p>
@@ -110,3 +154,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
+
