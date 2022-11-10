@@ -13,65 +13,98 @@
         <button type="button" class="btn" >Tambah Barang</button>
       </div>
       <div class="headerlogo">
-        <h5><b>NG</b>OBAT</h5>
+        <p><b>NG</b>OBAT</p>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;" id="1">
-                    <img src="./assets/obatbatuk.jpeg" class="card-img-top" alt="...">
+                    <img src="./assets/obatbatuk.jpeg" class="card-img-top-1" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">OBH COMBI</h5>
-                      <p class="card-text">Stock : 13</p>
-                      <p class="card-text">Harga : 20.000</p>
-                      <button type="button" class="btn btn-primary" id="1" onclick=useEdit(this.id)>Edit</button>
-                      <button type="button" class="btn delete btn-danger" id="1" onclick=useDelete(this.id)>Delete</button>
+                      <h5 class="card-title-1">OBH COMBI</h5>
+                      <p class="card-text-1">Stock : 13</p>
+                      <p class="card-text harga-1">Harga : 20.000</p>
+                      <button id="1" onclick="getId(this.id)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        Edit
+                      </button>
+                      <button type="button" class="btn delete btn-danger" id="1" onclick="useDelete(this.id)">Delete</button>
                     </div>
                   </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;" id="2">
-                    <img src="./assets/vicks.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/vicks.jpg" class="card-img-top-2" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">OBH COMBI</h5>
-                      <p class="card-text">Stock : 13</p>
-                      <p class="card-text">Harga : 20.000</p>                      
-                      <button type="button" class="btn btn-primary" id="2" onclick=useEdit(this.id)>Edit</button>
-                      <button type="button" class="btn delete btn-danger" id="1" onclick=useDelete(this.id)>Delete</button>
+                      <h5 class="card-title-2">OBH COMBI</h5>
+                      <p class="card-text-2">Stock : 13</p>
+                      <p class="card-text harga-2">Harga : 20.000</p>                      
+                      <button id="2" onclick="getId(this.id)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        Edit
+                      </button>
+                      <button type="button" class="btn delete btn-danger" id="2" onclick="useDelete(this.id)">Delete</button>
                     </div>
                   </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;" id="3">
-                    <img src="./assets/siladex.jpeg" class="card-img-top" alt="...">
+                    <img src="./assets/siladex.jpeg" class="card-img-top-3" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Stock : 13</p>
-                      <p class="card-text">Harga : 20.000</p>                      
-                      <button type="button" class="btn btn-primary" id="2" onclick=useEdit(this.id)>Edit</button>
-                      <button type="button" class="btn delete btn-danger" id="1" onclick=useDelete(this.id)>Delete</button>
+                      <h5 class="card-title-3">Card title</h5>
+                      <p class="card-text-3">Stock : 13</p>
+                      <p class="card-text harga-3">Harga : 20.000</p>                      
+                      <button id="3" onclick="getId(this.id)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        Edit
+                      </button>
+                      <button type="button" class="btn delete btn-danger" id="3" onclick="useDelete(this.id)">Delete</button>
                     </div>
                   </div>
             </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;" id="3">
-                  <img src="./assets/siladex.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Stock : 13</p>
-                    <p class="card-text">Harga : 20.000</p>                      
-                    <button type="button" class="btn btn-primary" id="2" onclick=useEdit(this.id)>Edit</button>
-                    <button type="button" class="btn delete btn-danger" id="1" onclick=useDelete(this.id)>Delete</button>
-                  </div>
-                </div>
-          </div>
         </div>
     </div>
-    <div class="footer">
+
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Edit</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Image</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail" class="form-label">Nama</label>
+                      <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword" class="form-label">Harga</label>
+                      <input type="number" class="form-control" id="exampleInputPassword">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label">Stock</label>
+                        <input type="number" class="form-control" id="exampleInputPassword2">
+                      </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="useEdit()" data-bs-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
         <h5><b>NG</b>OBAT</h5>
         <p>Hackaton8 by team 3</p>
     </div>
+    <script src="./index2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>

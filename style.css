@@ -3,7 +3,9 @@ body{
 
 }
 
-
+.container {
+    height: 90vh;
+}
 
 .header {
     height: 70px;
@@ -53,10 +55,12 @@ body{
     border-radius: 6px;
 }
 
+
 .footer{
     margin-top: 15px;
     height: 70px;
     background: linear-gradient(125.94deg, #FFD600 19.16%, #FFBB08 70.64%);
+    width: 100%;
 
 }
 
