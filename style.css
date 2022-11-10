@@ -1,10 +1,5 @@
 body{
     margin: 0;
-
-}
-
-.container {
-    height: 90vh;
 }
 
 .header {
@@ -78,8 +73,18 @@ body{
     color: #3D2187;
     text-align: center;
     font-size: 10px;
-} _
- .wrapper{
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+
+
+
+.wrapper{
     max-width: 500px;
     width: 100%;
     background: #fff;
@@ -114,8 +119,7 @@ body{
     font-size: 14px;
   }
   
-  .wrapper .form .input_field .input,
-  .wrapper .form .input_field .textarea{
+  .wrapper .form .input_field .input{
     width: 100%;
     outline: none;
     border: 1px solid #d5dbd9;
