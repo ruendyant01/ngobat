@@ -16,7 +16,7 @@ function useEdit() {
     image.src = getImage.value;
     nama.innerHTML = getNama.value;
     stock.innerHTML = "Stock : "+getStock.value;
-    getHarga.innerHTML = "Harga : "+getHarga.value;
+    harga.innerHTML = "Harga : "+getHarga.value;
 
     getImage.value = "";
     getNama.value = "";
